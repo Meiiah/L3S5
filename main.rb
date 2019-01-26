@@ -1,10 +1,6 @@
-require_relative 'Grille'
+require_relative 'ModeChrono'
 
 # Démo
+mode = ModeChrono.new
 
-grille=Grille.new(40,"grilles.txt");
-print "\n", grille
-print grille.tentesCol, "\n"
-
-print grille.tentesLigne, "\n"
-
+puts mode
