@@ -6,12 +6,29 @@ load "ModeJeu.rb"
 class ModeChrono < ModeJeu
 	def initialize
 		super(16)
-		@tempsDebut = Time.now
 	end
 
+	#Initialise le timer
+	def initTimer
+		@tempsJeu = Time.now
+		return self
+	end
 
 	#Retourne le temps de jeu en secondes
 	def tempsJeu
-		return Time.now - @tempsDebut
+		return Time.now - @tempsJeu
+	end
+
+
+	#Boucle de jeu du mode chrono
+	#Retourne le temps que le joueur a mis pour résoudre la grille
+	def jouer
+		self.initTimer
+		super
+		return self.tempsJeu
 	end
 end
+
+
+# jeu = ModeChrono.new
+# puts "Temps de jeu " + jeu.jouer.to_s + " secondes"

@@ -21,6 +21,8 @@ class ModeJeu
 	end
 
 
-	def jeu
+	def jouer
+		# puts "Méthode jouer"
+		puts @grille.to_s
 	end
 end
