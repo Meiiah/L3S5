@@ -14,7 +14,8 @@ class ModeExplo < ModeJeu
 
 
 	def jouer
-		(1..10).each do
+		(1..10).each do |i|
+			puts "grille " + i.to_s
 			super
 			self.nouvelleGrille(0)
 		end
@@ -23,5 +24,5 @@ class ModeExplo < ModeJeu
 end
 
 
-# jeu = ModeExplo.new
-# jeu.jouer
+jeu = ModeExplo.new
+jeu.jouer

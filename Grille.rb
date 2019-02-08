@@ -98,7 +98,7 @@ class Grille
 	# colonne 3
 	def parseColNum(nb,index)
 		self.tentesCol[index]=nb.to_i;
-	end	
+	end
 
 	# Initialise une Case de la grille selon la valeur du caractère fourni
 	# Associations : "A" > Arbre, "T" -> Tente, "_" -> Gazon

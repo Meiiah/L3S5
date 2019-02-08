@@ -5,3 +5,6 @@ class ModeTuto < ModeJeu
 		super(6)
 	end
 end
+
+m = ModeTuto.new
+m.jouer

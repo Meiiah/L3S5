@@ -30,5 +30,5 @@ class ModeChrono < ModeJeu
 end
 
 
-# jeu = ModeChrono.new
-# puts "Temps de jeu " + jeu.jouer.to_s + " secondes"
+jeu = ModeChrono.new
+puts "Temps de jeu " + jeu.jouer.to_s + " secondes"
